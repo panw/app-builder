@@ -1,37 +1,35 @@
-<head>
-  <meta charset="utf-8">
+<head>  
   <title>app-builder</title>
-  <meta name="description" content="App Builder">
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, minimal-ui, maximum-scale=1, minimum-scale=1" />
-  <link rel="shortcut icon" type="image/png" href="favicon.png?v1" sizes="16x16 32x32 64x64">
-  <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-precomposed.png">
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Brand</a>
+  <div class="navbar navbar-fixed-top navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Project name</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
     </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><button type="button" class="btn btn-default navbar-btn navbar-right">Sign in</button></li>
-      </ul>
+    <div class="navbar-collapse collapse navbar-right">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a>
+            </li>
+            <li><a href="#about">About</a>
+            </li>
+            <li><a href="#contact">Contact</a>
+            </li>
+        </ul>
     </div>
-  </nav>
-
-  <div class="container">
-      <div class="phone frame">
-        <div class="screen">
-            <nav class="navbar navbar-default" role="navigation">
-              <div class="container-fluid">
-                <a class="navbar-brand nav-center" href="#">Brand</a>
-              </div>
-            </nav>
-        </div>
-      </div>
+    <!--/.navbar-collapse -->
   </div>
 
+  <div class="container">
 
+
+      {{> phone}}
+
+  </div>
 </body>
